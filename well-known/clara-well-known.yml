@@ -1,0 +1,20 @@
+generated: '2026-07-18'
+method: searched
+source: live probes of joinansel.com (the apis.yml Website host)
+host: https://joinansel.com
+documents:
+- path: /.well-known/security.txt
+  status: 404
+- path: /.well-known/openid-configuration
+  status: 404
+- path: /.well-known/oauth-authorization-server
+  status: 404
+- path: /.well-known/api-catalog
+  status: 404
+- path: /.well-known/ai-plugin.json
+  status: 404
+note: >-
+  No /.well-known/ discovery documents are published. joinansel.com resolves to
+  Ansel Health (supplemental health insurance), which exposes no public API or
+  developer platform. No WellKnown/SecurityTxt scoring pointer is emitted because
+  nothing returned 200.
